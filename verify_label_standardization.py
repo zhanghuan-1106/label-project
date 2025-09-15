@@ -21,7 +21,7 @@ CONFIG = {
     
     # 功能分支配置
     "feature_branch": {
-        "name": "feat/label-color-standard",  # 标签标准化功能分支名
+        "name": "main",  # 标签标准化功能分支名
         "doc_file": "docs/label-color-standardization.md"  # 标签标准文档路径
     },
     
@@ -92,7 +92,7 @@ def _check_branch_exists(
     branch_name: str, headers: Dict[str, str], org: str, repo: str
 ) -> bool:
     """验证目标分支是否存在"""
-    success, _ = _get_github_api(f"branches/{branch_name}", headers, org, repo)
+    success, _ = _get_github_api(f"{branch_name}", headers, org, repo)
     return success
 
 def _get_file_content(
