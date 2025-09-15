@@ -24,7 +24,7 @@ GITHUB_ORG=your_organization
 1. 修改脚本中的 `CONFIG` 配置以适应你的项目需求
 2. 运行脚本：
 ```bash
-python workflow-compliance-verification.py
+python create_prerequisites.py
 ```
 
 ## 输出
